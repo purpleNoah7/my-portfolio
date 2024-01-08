@@ -1,6 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
-
+import Image from "next/image";
 export default function Project() {
   return (
     <div className="flex-col flex w-8/12 gap-8 pt-16 p-5">
@@ -84,20 +84,20 @@ export default function Project() {
               Tailwind CSS
             </span>
           </div>
-          <img
+          <Image
             src="/movie.png"
             className="w-[60%] shadow-xl shadow-blue-300/30 rounded-lg"
             alt=""
           />
         </div>{" "}
-      </motion.div>
-      <div className="flex flex-col items-start gap-2">
-        {" "}
-        <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
+      </motion.div>{" "}
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+      >
+        <div className="flex flex-col items-start gap-2">
+          {" "}
           <div className="flex flex-row">
             <h1 className="font-black text-3xl">
               <a href="#">
@@ -170,13 +170,13 @@ export default function Project() {
               Tailwind CSS
             </span>
           </div>
-          <img
+          <Image
             src="/portfolio.png"
             className="w-[60%] shadow-xl shadow-orange-300/30 rounded-lg"
             alt=""
           />
-        </motion.div>
-      </div>
+        </div>{" "}
+      </motion.div>
     </div>
   );
 }
