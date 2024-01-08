@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 export default function Project() {
   return (
-    <div className="flex-col flex w-8/12 gap-10 pt-16 p-5">
-      {" "}
+    <div className="flex-col items-center justify-center flex sm:w-10/12  gap-10 pt-16 p-5">
+    
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -85,14 +85,14 @@ export default function Project() {
             </span>
           </div>
           <Image
-               width={1000}
-               height={1000}
+            width={1000}
+            height={1000}
             src="/movie.png"
             className="w-[60%] shadow-xl shadow-blue-300/30 rounded-lg"
             alt=""
           />
         </div>{" "}
-      </motion.div>{" "}
+      </motion.div>
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
