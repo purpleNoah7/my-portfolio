@@ -15,7 +15,7 @@ export default function HeroSection() {
         <div className="text-center">
           <div className="flex items-center gap-1 justify-center">
             <h2 className="dark:text-slate-300 text-black">
-              Hi, I'm Leandro Jimenéz
+              Hi, I&apos;m Leandro Jimenéz
             </h2>
             <img src="/waving.png" className="h-5 w-5" alt="" />
           </div>

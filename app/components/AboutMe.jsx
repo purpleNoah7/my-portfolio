@@ -12,7 +12,7 @@ export default function AboutMe() {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.3}}
+        transition={{ duration: 0.5, delay: 0.3 }}
       >
         <h2 className="text-6xl text-center font-black bg-gradient-to-br from-blue-300 to-blue-700 bg-clip-text text-transparent   tracking-tight leading-none">
           Come{" "}
@@ -34,8 +34,8 @@ export default function AboutMe() {
           </p>
           <p>
             Beyond the screen, my life is marked by a wide range of{" "}
-            <span className="font-bold"> hobbies</span>. When I'm not diving
-            into lines of code, I find solace in the melodies I compose,
+            <span className="font-bold"> hobbies</span>. When I&apos;m not
+            diving into lines of code, I find solace in the melodies I compose,
             channeling creativity through music.
           </p>
           <p>
