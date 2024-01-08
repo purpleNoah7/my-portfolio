@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 export default function Project() {
   return (
-    <div className="flex-col flex w-8/12 gap-8 pt-16 p-5">
+    <div className="flex-col flex w-8/12 gap-10 pt-16 p-5">
       {" "}
       <motion.div
         initial={{ opacity: 0, y: 100 }}
@@ -85,6 +85,8 @@ export default function Project() {
             </span>
           </div>
           <Image
+               width={1000}
+               height={1000}
             src="/movie.png"
             className="w-[60%] shadow-xl shadow-blue-300/30 rounded-lg"
             alt=""
@@ -171,6 +173,8 @@ export default function Project() {
             </span>
           </div>
           <Image
+            width={1000}
+            height={1000}
             src="/portfolio.png"
             className="w-[60%] shadow-xl shadow-orange-300/30 rounded-lg"
             alt=""
