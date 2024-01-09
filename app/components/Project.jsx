@@ -102,25 +102,6 @@ export default function Project() {
           {" "}
           <div className="flex flex-row">
             <h1 className="font-black text-3xl">
-              <a href="#">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-external-link"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
-                  <path d="M11 13l9 -9" />
-                  <path d="M15 4h5v5" />
-                </svg>
-              </a>
               <span className="bg-gradient-to-br from-orange-300 to-orange-500 bg-clip-text text-transparent   tracking-tight leading-none">
                 Portfolio.Dev
               </span>{" "}
@@ -171,6 +152,26 @@ export default function Project() {
               </svg>
               Tailwind CSS
             </span>
+            <a className="flex" href="#">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-external-link"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                <path d="M11 13l9 -9" />
+                <path d="M15 4h5v5" />
+              </svg>
+              Open it
+            </a>
           </div>
           <Image
             width={1000}
