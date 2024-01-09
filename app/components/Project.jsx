@@ -4,34 +4,14 @@ import Image from "next/image";
 export default function Project() {
   return (
     <div className="flex-col items-center justify-center flex sm:w-10/12  gap-10 pt-16 p-5">
-    
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
       >
         <div className="flex flex-col items-start gap-2">
-          <div className="flex flex-row">
+          <div className="flex flex-col gap">
             <h1 className="font-black text-3xl">
-              <a href="https://movie-line.vercel.app/">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="icon icon-tabler icon-tabler-external-link"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  stroke-width="2"
-                  stroke="currentColor"
-                  fill="none"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                >
-                  <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                  <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
-                  <path d="M11 13l9 -9" />
-                  <path d="M15 4h5v5" />
-                </svg>
-              </a>
               <span className="bg-gradient-to-br from-blue-300 to-blue-500 bg-clip-text text-transparent   tracking-tight leading-none">
                 MovieLine
               </span>{" "}
@@ -82,7 +62,27 @@ export default function Project() {
                 </defs>
               </svg>
               Tailwind CSS
-            </span>
+            </span>{" "}
+            <a className="flex" href="https://movie-line.vercel.app/">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon icon-tabler icon-tabler-external-link"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 6h-6a2 2 0 0 0 -2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-6" />
+                <path d="M11 13l9 -9" />
+                <path d="M15 4h5v5" />
+              </svg>
+              Open it
+            </a>
           </div>
           <Image
             width={1000}
@@ -139,8 +139,8 @@ export default function Project() {
                 stroke-width="2"
                 stroke="currentColor"
                 fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               >
                 <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <path d="M9 15v-6l7.745 10.65a9 9 0 1 1 2.255 -1.993" />
@@ -155,12 +155,12 @@ export default function Project() {
                 fill="none"
                 viewBox="0 0 54 33"
               >
-                <g clip-path="url(#a)">
+                <g clipPath="url(#a)">
                   <path
                     fill="#38bdf8"
                     fill-rule="evenodd"
                     d="M27 0c-7.2 0-11.7 3.6-13.5 10.8 2.7-3.6 5.85-4.95 9.45-4.05 2.054.513 3.522 2.004 5.147 3.653C30.744 13.09 33.808 16.2 40.5 16.2c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C36.756 3.11 33.692 0 27 0zM13.5 16.2C6.3 16.2 1.8 19.8 0 27c2.7-3.6 5.85-4.95 9.45-4.05 2.054.514 3.522 2.004 5.147 3.653C17.244 29.29 20.308 32.4 27 32.4c7.2 0 11.7-3.6 13.5-10.8-2.7 3.6-5.85 4.95-9.45 4.05-2.054-.513-3.522-2.004-5.147-3.653C23.256 19.31 20.192 16.2 13.5 16.2z"
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                   ></path>
                 </g>
                 <defs>

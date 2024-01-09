@@ -5,7 +5,7 @@ import ProjectPage from "./components/ProjectPage";
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col">
       <HeroSection />
       <AboutMe />
       <ProjectPage />

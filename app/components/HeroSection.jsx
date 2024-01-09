@@ -8,7 +8,7 @@ export default function HeroSection() {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, ease: easeInOut }}
     >
-      <div className=" p-3   gap-8 flex flex-col items-center justify-center w-full min-h-screen mb-52 sm:mb-0">
+      <div className=" p-3   gap-8 flex flex-col items-center justify-center w-full h-screen mb-52 sm:mb-0">
         <div>
           <Avatar avatar={"/picture.JPG"}></Avatar>
         </div>
