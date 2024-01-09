@@ -18,7 +18,7 @@ export default function AboutMe() {
   return (
     <article
       id="about"
-      className="flex flex-col w-full h-screen justify-center items-center gap-10 mb-60 md:mb-0"
+      className="flex flex-col w-full h-full justify-center items-center gap-10 mb-60 md:mb-0"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -73,7 +73,7 @@ export default function AboutMe() {
             </span>
           </h2>{" "}
         </motion.div>
-        <div className="flex relative p-5 gap-4 flex-wrap items-center justify-center  md:mb-44 xl:mb-0 ">
+        <div className="flex relative p-5 gap-4 flex-wrap items-center justify-center  xl:mb-0 ">
           {language.map((language, index) => (
             <div
               key={index}
