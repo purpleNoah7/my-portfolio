@@ -2,8 +2,19 @@
 
 import { motion } from "framer-motion";
 import language from "./data/languaje";
+import { useState } from "react";
 
 export default function AboutMe() {
+  const [activeLanguage, setActiveLanguage] = useState(null);
+
+  const handleMouseEnter = (language) => {
+    setActiveLanguage(language);
+  };
+
+  const handleMouseLeave = () => {
+    setActiveLanguage(null);
+  };
+
   return (
     <article
       id="about"
@@ -24,7 +35,7 @@ export default function AboutMe() {
             me!
           </span>
         </h2>
-        <div className="text-black dark:text-slate-100 p-10 text-pretty md:text-center">
+        <div className="text-black dark:text-slate-100 text-xl p-10 text-pretty md:text-center">
           <p>
             As a <span className="font-bold">junior programmer</span>, I am
             driven by an unwavering passion for code and a commitment to
@@ -62,9 +73,37 @@ export default function AboutMe() {
             </span>
           </h2>{" "}
         </motion.div>
-        <div className="flex p-5 gap-4 flex-wrap items-center justify-center ">
+        <div className="flex relative p-5 gap-4 flex-wrap items-center justify-center  md:mb-44 xl:mb-0 ">
           {language.map((language, index) => (
-            <img key={index} src={language.icon} alt="" />
+            <div
+              key={index}
+              onMouseEnter={() => handleMouseEnter(language)}
+              onMouseLeave={handleMouseLeave}
+              style={{ position: "relative" }}
+            >
+              <img
+                src={language.icon}
+                className="cursor-pointer"
+                alt={language.name}
+              />
+              {activeLanguage === language && (
+                <div
+                  style={{
+                    position: "absolute",
+                    backgroundColor: "rgba(0, 0, 0, 0.8)",
+                    color: "#fff",
+                    padding: "4px 8px",
+                    borderRadius: "5px",
+                    top: "110%",
+                    left: "50%",
+                    transform: "translateX(-50%)",
+                    zIndex: 9999,
+                  }}
+                >
+                  {language.name}
+                </div>
+              )}
+            </div>
           ))}
         </div>
       </div>
