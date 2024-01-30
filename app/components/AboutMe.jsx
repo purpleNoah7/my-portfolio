@@ -26,12 +26,11 @@ export default function AboutMe() {
         transition={{ duration: 0.5, delay: 0.3 }}
       >
         <h2 className="text-6xl text-center font-black bg-gradient-to-br from-blue-300 to-blue-700 bg-clip-text text-transparent   tracking-tight leading-none">
-          Come{" "}
+          Come
           <span className="text-6xl font-black bg-gradient-to-br from-orange-300 to-orange-700 bg-clip-text text-transparent   tracking-tight leading-none">
             meet
-          </span>{" "}
+          </span>
           <span className="text-6xl font-black bg-gradient-to-br from-purple-300 to-purple-500 bg-clip-text text-transparent   tracking-tight leading-none">
-            {" "}
             me!
           </span>
         </h2>
@@ -41,10 +40,10 @@ export default function AboutMe() {
             driven by an unwavering passion for code and a commitment to
             continuous learning. My journey into the world of programming has
             been largely self-taught, a testament to my determination and
-            curiosity.{" "}
+            curiosity.
           </p>
           <p>
-            Beyond the screen, my life is marked by a wide range of{" "}
+            Beyond the screen, my life is marked by a wide range of
             <span className="font-bold"> hobbies</span>. When I&apos;m not
             diving into lines of code, I find solace in the melodies I compose,
             channeling creativity through music.
@@ -53,7 +52,7 @@ export default function AboutMe() {
             And, of course, there is play, whether in the virtual realm,
             engaging in activities that keep my mind agile and imaginative.
             These passions complement my programming experience and offer me a
-            comprehensive approach to problem solving and{" "}
+            comprehensive approach to problem solving and
             <span className="font-bold">creative expression</span>.
           </p>
         </div>
@@ -66,14 +65,13 @@ export default function AboutMe() {
           transition={{ duration: 0.5 }}
         >
           <h2 className="text-center font-black text-5xl bg-gradient-to-br from-blue-300 to-blue-700 bg-clip-text text-transparent   tracking-tight leading-none p-5 ">
-            Professional{" "}
+            Professional
             <span className="text-5xl font-black bg-gradient-to-br from-purple-300 to-purple-500 bg-clip-text text-transparent   tracking-tight leading-none">
-              {" "}
               Skillset
             </span>
-          </h2>{" "}
+          </h2>
         </motion.div>
-        <div className="flex relative p-5 gap-4 flex-wrap items-center justify-center  xl:mb-0 ">
+        <div className="flex max-w-[50%] relative p-5 gap-4 flex-wrap items-center justify-center  xl:mb-0 ">
           {language.map((language, index) => (
             <div
               key={index}
