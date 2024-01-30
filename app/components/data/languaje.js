@@ -20,6 +20,10 @@ const language = [
     icon: "https://skillicons.dev/icons?i=react",
   },
   {
+    name:"TypeScript",
+    icon:"https://skillicons.dev/icons?i=typescript",
+  },
+  {
     name: "Astro",
     icon: "https://skillicons.dev/icons?i=astro",
   },
