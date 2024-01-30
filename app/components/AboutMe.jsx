@@ -73,7 +73,7 @@ export default function AboutMe() {
             </span>
           </h2>{" "}
         </motion.div>
-        <div className="flex  relative p-5 gap-4 flex-wrap items-center justify-center  xl:mb-0 ">
+        <div className="flex max-w-[50%] relative p-5 gap-4 flex-wrap items-center justify-center  xl:mb-0 ">
           {language.map((language, index) => (
             <div
               key={index}
