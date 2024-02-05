@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 export default function ProjectPage() {
   return (
     <div className="h-screen w-full flex flex-col items-center gap-16 ">
-      <h2 className="text-white text-6xl font-black">Proyectos</h2>
+      <h2 className="text-white text-6xl font-black">Projects</h2>
       <div className="flex-col items-center justify-center flex sm:w-10/12  gap-10 pt-16 p-5">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
