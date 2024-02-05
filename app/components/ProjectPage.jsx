@@ -5,9 +5,9 @@ import { motion } from "framer-motion";
 
 export default function ProjectPage() {
   return (
-    <div className="h-screen w-full flex flex-col items-center gap-16 ">
+    <div className="min-h-screen w-full flex flex-col items-center gap-16 h-full ">
       <h2 className="text-white text-6xl font-black">Projects</h2>
-      <div className="flex-col items-center justify-center flex sm:w-10/12  gap-10 pt-16 p-5">
+      <div className="flex-col items-center justify-center flex w-10/12  gap-10 pt-16 p-5">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -205,7 +205,7 @@ export default function ProjectPage() {
               This project that I did following 1 nextJs/api course with prisma
               and tailwindcss, I did it using typescript
             </span>
-            <div className="flex gap-1">
+            <div className="flex gap-1 flex-wrap">
               <span class="flex gap-x-2 rounded-full text-xs bg-[#000000] text-white py-1 px-2 border border-white/10">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
