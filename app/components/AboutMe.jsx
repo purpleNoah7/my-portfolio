@@ -61,10 +61,10 @@ export default function AboutMe() {
 
       <div className="flex items-center justify-center flex-col gap-3">
         <motion.div
-        className="flex items-center justify-center flex-col gap-3"
+          className="flex items-center justify-center flex-col gap-3"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 1 }}
         >
           <h2 className="text-center font-black text-5xl bg-gradient-to-br from-blue-300 to-blue-700 bg-clip-text text-transparent   tracking-tight leading-none p-5 ">
             Professional{" "}
