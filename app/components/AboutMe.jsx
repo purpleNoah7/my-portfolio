@@ -18,7 +18,7 @@ export default function AboutMe() {
   return (
     <article
       id="about"
-      className="flex flex-col w-full h-full justify-center items-center gap-10 mb-60 md:mb-0"
+      className="flex flex-col w-full min-h-screen h-full justify-center items-center gap-10 mb-60 md:mb-0"
     >
       <motion.div
         initial={{ opacity: 0, y: 50 }}
@@ -61,6 +61,7 @@ export default function AboutMe() {
 
       <div className="flex items-center justify-center flex-col gap-3">
         <motion.div
+        className="flex items-center justify-center flex-col gap-3"
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
@@ -72,40 +73,40 @@ export default function AboutMe() {
               Skillset
             </span>
           </h2>{" "}
+          <div className="flex max-w-[50%] relative p-5 gap-4 flex-wrap items-center justify-center  xl:mb-0 ">
+            {language.map((language, index) => (
+              <div
+                key={index}
+                onMouseEnter={() => handleMouseEnter(language)}
+                onMouseLeave={handleMouseLeave}
+                style={{ position: "relative" }}
+              >
+                <img
+                  src={language.icon}
+                  className="cursor-pointer"
+                  alt={language.name}
+                />
+                {activeLanguage === language && (
+                  <div
+                    style={{
+                      position: "absolute",
+                      backgroundColor: "rgba(0, 0, 0, 0.8)",
+                      color: "#fff",
+                      padding: "4px 8px",
+                      borderRadius: "5px",
+                      top: "110%",
+                      left: "50%",
+                      transform: "translateX(-50%)",
+                      zIndex: 9999,
+                    }}
+                  >
+                    {language.name}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
         </motion.div>
-        <div className="flex max-w-[50%] relative p-5 gap-4 flex-wrap items-center justify-center  xl:mb-0 ">
-          {language.map((language, index) => (
-            <div
-              key={index}
-              onMouseEnter={() => handleMouseEnter(language)}
-              onMouseLeave={handleMouseLeave}
-              style={{ position: "relative" }}
-            >
-              <img
-                src={language.icon}
-                className="cursor-pointer"
-                alt={language.name}
-              />
-              {activeLanguage === language && (
-                <div
-                  style={{
-                    position: "absolute",
-                    backgroundColor: "rgba(0, 0, 0, 0.8)",
-                    color: "#fff",
-                    padding: "4px 8px",
-                    borderRadius: "5px",
-                    top: "110%",
-                    left: "50%",
-                    transform: "translateX(-50%)",
-                    zIndex: 9999,
-                  }}
-                >
-                  {language.name}
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
       </div>
     </article>
   );
