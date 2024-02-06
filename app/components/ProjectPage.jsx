@@ -13,7 +13,7 @@ export default function ProjectPage() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="flex flex-col items-start gap-2">
+          <div className="flex flex-col items-start gap-4">
             <div className="flex flex-col gap">
               <h1 className="font-black text-3xl">
                 <span className="bg-gradient-to-br from-blue-300 to-blue-500 bg-clip-text text-transparent   tracking-tight leading-none">
@@ -102,7 +102,7 @@ export default function ProjectPage() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="flex flex-col items-start gap-2">
+          <div className="flex flex-col items-start gap-4">
             {" "}
             <div className="flex flex-row">
               <h1 className="font-black text-3xl">
@@ -191,7 +191,7 @@ export default function ProjectPage() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="flex flex-col items-start gap-2">
+          <div className="flex flex-col items-start gap-4">
             {" "}
             <div className="flex flex-row">
               <h1 className="font-black text-3xl">
