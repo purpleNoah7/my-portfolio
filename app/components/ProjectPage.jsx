@@ -7,7 +7,7 @@ export default function ProjectPage() {
   return (
     <div className="min-h-screen w-full flex flex-col items-center gap-16 h-full ">
       <h2 className="text-white text-6xl font-black">Projects</h2>
-      <div className="flex-col items-center justify-center flex w-10/12  gap-10 pt-16 p-5">
+      <div className="flex-col items-center justify-center flex w-10/12  gap-20">
         <motion.div
           initial={{ opacity: 0, y: 100 }}
           whileInView={{ opacity: 1, y: 0 }}
