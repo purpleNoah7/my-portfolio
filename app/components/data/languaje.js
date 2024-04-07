@@ -55,5 +55,9 @@ const language = [
     name: "MongoDB",
     icon: "https://skillicons.dev/icons?i=mongodb",
   },
+      {
+    name: "Prisma",
+    icon: "https://skillicons.dev/icons?i=prisma",
+  },
 ];
 export default language;
