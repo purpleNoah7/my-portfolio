@@ -39,5 +39,21 @@ const language = [
     name: "Github",
     icon: "https://skillicons.dev/icons?i=github",
   },
+    {
+    name: "NodeJS",
+    icon: "https://skillicons.dev/icons?i=nodejs",
+  },
+    {
+    name: "Electron",
+    icon: "https://skillicons.dev/icons?i=electron",
+  },
+      {
+    name: "Electron",
+    icon: "https://skillicons.dev/icons?i=express",
+  },
+      {
+    name: "Electron",
+    icon: "https://skillicons.dev/icons?i=mongodb",
+  },
 ];
 export default language;
