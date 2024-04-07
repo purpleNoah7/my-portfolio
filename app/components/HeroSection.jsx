@@ -21,7 +21,7 @@ export default function HeroSection() {
           </div>
           <h1 className="text-5xl max-w-[700px] text-black dark:text-slate-200 font-black ">
             <span className="bg-gradient-to-br from-blue-300 to-blue-700 bg-clip-text text-transparent   tracking-tight leading-none">
-              Frontend
+              FullStack
             </span>{" "}
             <span className="bg-gradient-to-br from-orange-300 to-orange-500 bg-clip-text text-transparent  font-extrabold tracking-tight leading-none">
               Developer
