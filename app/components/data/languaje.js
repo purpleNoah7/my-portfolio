@@ -48,11 +48,11 @@ const language = [
     icon: "https://skillicons.dev/icons?i=electron",
   },
       {
-    name: "Electron",
+    name: "Express",
     icon: "https://skillicons.dev/icons?i=express",
   },
       {
-    name: "Electron",
+    name: "MongoDB",
     icon: "https://skillicons.dev/icons?i=mongodb",
   },
 ];
