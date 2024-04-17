@@ -59,5 +59,9 @@ const language = [
     name: "Prisma",
     icon: "https://skillicons.dev/icons?i=prisma",
   },
+    {
+    name: "React Native",
+    icon: "https://skillicons.dev/icons?i=react",
+  },
 ];
 export default language;
