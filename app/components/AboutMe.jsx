@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import { motion } from "framer-motion";
@@ -23,7 +24,7 @@ export default function AboutMe() {
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.3 }}
+        transition={{ duration: 0.5 }}
       >
         <h2 className="text-6xl text-center font-black bg-gradient-to-br from-blue-300 to-blue-700 bg-clip-text text-transparent   tracking-tight leading-none">
           Come{" "}
@@ -57,14 +58,10 @@ export default function AboutMe() {
             <span className="font-bold">creative expression</span>.
           </p>
         </div>
-      </motion.div>
-
+    
       <div className="flex items-center justify-center flex-col gap-3">
-        <motion.div
+        <div
           className="flex items-center justify-center flex-col gap-3"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
         >
           <h2 className="text-center font-black text-5xl bg-gradient-to-br from-blue-300 to-blue-700 bg-clip-text text-transparent   tracking-tight leading-none p-5 ">
             Professional{" "}
@@ -75,39 +72,49 @@ export default function AboutMe() {
           </h2>{" "}
           <div className="flex max-w-[50%] relative p-5 gap-4 flex-wrap items-center justify-center  xl:mb-0 ">
             {language.map((language, index) => (
-              <div
+              <motion.div
                 key={index}
-                onMouseEnter={() => handleMouseEnter(language)}
-                onMouseLeave={handleMouseLeave}
-                style={{ position: "relative" }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1}}
+                transition={{ duration: 1, delay: index * 0.05}}
+                
               >
-                <img
-                  src={language.icon}
-                  className="cursor-pointer"
-                  alt={language.name}
-                />
-                {activeLanguage === language && (
-                  <div
-                    style={{
-                      position: "absolute",
-                      backgroundColor: "rgba(0, 0, 0, 0.8)",
-                      color: "#fff",
-                      padding: "4px 8px",
-                      borderRadius: "5px",
-                      top: "110%",
-                      left: "50%",
-                      transform: "translateX(-50%)",
-                      zIndex: 9999,
-                    }}
-                  >
-                    {language.name}
-                  </div>
-                )}
-              </div>
+                <div
+                  key={index}
+                  onMouseEnter={() => handleMouseEnter(language)}
+                  onMouseLeave={handleMouseLeave}
+                  style={{ position: "relative" }}
+                >
+                  <img
+                    src={language.icon}
+                    className="cursor-pointer"
+                    alt={language.name}
+                  />
+                  {activeLanguage === language && (
+                    <div
+                      style={{
+                        position: "absolute",
+                        backgroundColor: "rgba(0, 0, 0, 0.8)",
+                        color: "#fff",
+                        padding: "4px 8px",
+                        borderRadius: "5px",
+                        top: "110%",
+                        left: "50%",
+                        transform: "translateX(-50%)",
+                        zIndex: 9999,
+                      }}
+                    >
+                      {language.name}
+                    </div>
+                  )}
+                </div>
+              </motion.div>
             ))}
           </div>
-        </motion.div>
+        </div>
       </div>
+      </motion.div>
+
     </article>
   );
 }
