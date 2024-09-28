@@ -14,6 +14,7 @@ const language = [
   {
     name: "NextJs",
     icon: "https://skillicons.dev/icons?i=nextjs",
+    project: ["MovieLine", "Portfolio.Dev", "Todo"]
   },
   {
     name: "React",
@@ -22,6 +23,7 @@ const language = [
   {
     name:"TypeScript",
     icon:"https://skillicons.dev/icons?i=typescript",
+    project: ["Todo"]
   },
   {
     name: "Astro",
@@ -30,6 +32,7 @@ const language = [
   {
     name: "TailwindCss",
     icon: "https://skillicons.dev/icons?i=tailwindcss",
+    project: ["MovieLine", "Portfolio.Dev", "Todo"]
   },
   {
     name: "Git",
@@ -63,5 +66,13 @@ const language = [
     name: "React Native",
     icon: "https://skillicons.dev/icons?i=react",
   },
+  {
+    name: "Python",
+    icon: "https://skillicons.dev/icons?i=python"
+  },
+  {
+    name: "FastApi",
+    icon: "https://skillicons.dev/icons?i=fastapi"
+  }
 ];
 export default language;
